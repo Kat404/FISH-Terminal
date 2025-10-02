@@ -2,7 +2,16 @@
 
 ¡Bienvenido a mi configuración personalizada de Fish Shell! Este repositorio contiene mi configuración personal de Fish, un shell de línea de comandos amigable e interactivo, junto con Fisher, un gestor de paquetes para Fish que hace que la instalación de plugins sea pan comido.
 
-## ✨ Características
+## 📚 Tabla de Contenidos <a id="tabla-de-contenidos"></a>
+
+1. [Características](#caracteristicas)
+2. [Instalación](#instalacion)
+3. [Plugins recomendados](#plugins-recomendados)
+4. [Personalización](#personalizacion)
+5. [Contribuciones](#contribuciones)
+6. [Licencia](#licencia)
+
+## ✨ Características <a id="caracteristicas"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
 - **Interfaz intuitiva** con información útil en el prompt
 - **Autocompletado inteligente** que aprende de tus comandos más usados
@@ -11,7 +20,7 @@
 - **Alias útiles** para comandos comunes
 - **Temas personalizables** para el prompt
 
-## 🚀 Instalación
+## 🚀 Instalación <a id="instalacion"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
 1. Instala Fish Shell si aún no lo tienes:
 
@@ -52,14 +61,14 @@
    fisher update
    ```
 
-## 🛠️ Plugins recomendados
+## 🛠️ Plugins recomendados <a id="plugins-recomendados"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
-- **Tema**: `tide` - Un tema minimalista y rápido
+- **Tema**: `tide` - Un tema minimalista y rápido, basado en Powerlevel10k
 - **Autosugerencias**: `z` - Navegación rápida entre directorios
 - **Sintaxis**: `bass` - Soporte para scripts bash
 - **Utilidades**: `fzf` - Búsqueda difusa
 
-## 🎨 Personalización
+## 🎨 Personalización <a id="personalizacion"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
 Puedes personalizar tu configuración editando los archivos en `~/.config/fish/`:
 
@@ -67,13 +76,13 @@ Puedes personalizar tu configuración editando los archivos en `~/.config/fish/`
 - `functions/` - Funciones personalizadas
 - `completions/` - Archivos de autocompletado
 
-## 🤝 Contribuciones
+## 🤝 Contribuciones <a id="contribuciones"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
 ¡Las contribuciones son bienvenidas! Siéntete libre de hacer un fork y enviar un pull request.
 
-## 📝 Licencia
+## 📝 Licencia <a id="licencia"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+Este proyecto está bajo la Licencia MIT. Ver el archivo [`LICENSE`](LICENSE) para más detalles.
 
 ---
 
