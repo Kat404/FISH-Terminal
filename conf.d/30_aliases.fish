@@ -13,9 +13,13 @@ alias l.="eza -a | grep -e '^\.'"
 # --- Comandos comunes y utilidades del sistema ---
 alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
-alias update='sudo pacman -Syu && flatpak update'
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
-alias mirror="sudo cachyos-rate-mirrors"
+# ?: Descomenta según sea la el administrador de paquetes que use tu distribución de Linux
+# alias update='sudo pacman -Syu && flatpak update' ?: Para Arch Linux (sin tomar AUR)
+# alias update='sudo apt update && sudo apt upgrade -y && flatpak update' ?: Para Debian/Ubuntu
+# alias update='sudo dnf update && flatpak update' ?: Para Fedora
+# alias update='sudo zypper update && flatpak update' ?: Para openSUSE
+# alias cleanup='sudo pacman -Rns (pacman -Qtdq)' ?: Comando personalizado para Arch Linux
+# alias mirror="sudo cachyos-rate-mirrors" ?: Comando personalizado para CachyOS
 alias jctl="journalctl -p 3 -xb"
 alias please='sudo'
 
@@ -29,7 +33,7 @@ alias tarnow='tar -acf '
 alias untar='tar -zxvf '
 alias ungz="gunzip -k"
 alias wget='wget -c '
-alias icat='kitten icat'
+# alias icat='kitten icat' ?: Descomenta si usas la terminal Kitty, si no, puedes eliminar esta línea
 alias ir='cd'
 alias irq='prevd'
 alias ira='nextd'
@@ -54,3 +58,16 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias tb='nc termbin.com 9999'
 alias fsh='fastfetch'
+# alias nsh='neofetch' ?: Descomenta si aún haces uso de neofetch
+
+# --- Aliases para Git ---
+alias gs='git status'
+alias glo='git log --oneline'
+alias glo5='git log --oneline -5'
+alias ga='git add'
+alias gaa='git add --all'
+alias gc='git commit -m'
+alias gco='git checkout'
+alias gbr='git branch'
+alias gpr='git pull'
+alias gp='git push'

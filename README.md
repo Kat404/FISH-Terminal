@@ -1,12 +1,12 @@
-# 🐠 Configuración de Fish Shell con Fisher
+# 🐠 Configuración de Fish con Fisher
 
-¡Bienvenido a mi configuración personalizada de Fish Shell! Este repositorio contiene mi configuración personal de Fish, un shell de línea de comandos amigable e interactivo, junto con Fisher, un gestor de paquetes para Fish que hace que la instalación de plugins sea pan comido.
+¡Bienvenido a mi configuración personalizada de Fish! Este repositorio contiene mi configuración personal de Fish, un shell de línea de comandos amigable e interactivo, junto con Fisher, un gestor de paquetes para Fish que hace que la instalación de plugins sea pan comido.
 
 ## 📚 Tabla de Contenidos <a id="tabla-de-contenidos"></a>
 
 1. [Características](#caracteristicas)
 2. [Instalación](#instalacion)
-3. [Plugins recomendados](#plugins-recomendados)
+3. [Plugins Instalados](#plugins-instalados)
 4. [Personalización](#personalizacion)
 5. [Contribuciones](#contribuciones)
 6. [Licencia](#licencia)
@@ -22,7 +22,7 @@
 
 ## 🚀 Instalación <a id="instalacion"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
-1. Instala Fish Shell si aún no lo tienes:
+1. Instala Fish si aún no lo tienes:
 
    ```bash
    # En sistemas basados en Debian/Ubuntu
@@ -61,20 +61,23 @@
    fisher update
    ```
 
-## 🛠️ Plugins recomendados <a id="plugins-recomendados"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
+## 🛠️ Plugins Instalados <a id="plugins-instalados"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
 - **Tema**: `tide` - Un tema minimalista y rápido, basado en Powerlevel10k
-- **Autosugerencias**: `z` - Navegación rápida entre directorios
-- **Sintaxis**: `bass` - Soporte para scripts bash
-- **Utilidades**: `fzf` - Búsqueda difusa
+- **Autocompletado**: `fzf` - Búsqueda difusa
+- **Gestor de paquetes**: `fisher` - Gestor de paquetes para Fish
+- **Gestor de tareas**: `done` - Gestor de tareas para comandos de larga ejecución en Fish
 
 ## 🎨 Personalización <a id="personalizacion"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
 Puedes personalizar tu configuración editando los archivos en `~/.config/fish/`:
 
 - `config.fish` - Configuración principal
-- `functions/` - Funciones personalizadas
-- `completions/` - Archivos de autocompletado
+- `mi-config.fish` - Configuración personalizada
+- `00_env.fish` - Variables de entorno
+- `10_functions.fish` - Funciones personalizadas
+- `20_bindings.fish` - Archivos de autocompletado
+- `30_aliases.fish` - Aliases personalizados
 
 ## 🤝 Contribuciones <a id="contribuciones"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
