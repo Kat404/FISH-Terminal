@@ -1,35 +1,35 @@
 # -----------------------------------------------------------------------------
-#                   ---> VARIABLES DE ENTORNO Y PATH <---
+#                   ---> ENVIRONMENT VARIABLES AND PATH <---
 #
-# Aquí se definen variables de entorno y se añaden directorios al PATH del
-# sistema para que Fish pueda encontrar los ejecutables.
+# Here we define environment variables and add directories to the system PATH
+# so Fish can find executables.
 # -----------------------------------------------------------------------------
 
-# Mejora la visualización de las páginas del manual con 'bat'
+# Improve manual page rendering with 'bat'
 set -x MANROFFOPT -c
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
-# Carga configuraciones compatibles desde .fish_profile si existe 
+# Load compatible settings from .fish_profile if it exists
 if test -f ~/.fish_profile
     source ~/.fish_profile
 end
 
-# Añade el directorio local de binarios al PATH si existe 
+# Add the local binaries directory to PATH if it exists
 if test -d ~/.local/bin
     if not contains -- ~/.local/bin $PATH
         set -p PATH ~/.local/bin
     end
 end
 
-# Añade las depot_tools de Google al PATH si existen 
+# Add Google's depot_tools to PATH if present
 if test -d ~/Applications/depot_tools
     if not contains -- ~/Applications/depot_tools $PATH
         set -p PATH ~/Applications/depot_tools
     end
 end
 
-# Configuración del plugin 'done' para notificaciones
-# Duración mínima de un comando para notificar (10 segundos) 
+# 'done' plugin configuration for notifications
+# Minimum command duration to notify (10 seconds)
 set -U __done_min_cmd_duration 10000
-# Nivel de urgencia de la notificación (bajo) 
+# Notification urgency level (low)
 set -U __done_notification_urgency_level low

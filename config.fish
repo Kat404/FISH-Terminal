@@ -1,10 +1,9 @@
 # -----------------------------------------------------------------------------
-#                       CONFIGURACIÓN PRINCIPAL DE FISH
+#                       MAIN FISH CONFIGURATION
 #
-# Este archivo es el punto de entrada. Su única función es buscar y ejecutar
-# todos los archivos de configuración .fish que se encuentren en el directorio
-# conf.d y functions.
+# This file is the entry point. Its only purpose is to locate and source all
+# .fish configuration files found in the conf.d and functions directories.
 # -----------------------------------------------------------------------------
 
-# Carga la configuración personal
-source $__fish_config_dir/mi-config.fish
+# Load personal configuration
+source $__fish_config_dir/my-config.fish

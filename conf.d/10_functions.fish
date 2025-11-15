@@ -1,11 +1,11 @@
 # -----------------------------------------------------------------------------
-#                       ---> FUNCIONES PERSONALIZADAS <---
+#                       ---> CUSTOM FUNCTIONS <---
 #
-# Definiciones de funciones para extender las capacidades de la terminal.
+# Function definitions to extend terminal capabilities.
 # -----------------------------------------------------------------------------
 
-# --- Funciones para emular '!!' y '!$' (último comando y último argumento) ---
-# Extraído de: https://github.com/oh-my-fish/plugin-bang-bang
+# --- Functions to emulate '!!' and '!$' (last command and last argument) ---
+# Source: https://github.com/oh-my-fish/plugin-bang-bang
 function __history_previous_command
     switch (commandline -t)
         case "!"
@@ -26,17 +26,17 @@ function __history_previous_command_arguments
     end
 end
 
-# --- Historial de comandos con fecha y hora ---
+# --- Command history with timestamp ---
 function history
     builtin history --show-time='%F %T '
 end
 
-# --- Función para crear un backup rápido de un archivo ---
+# --- Function to quickly create a backup of a file ---
 function backup --argument filename
     cp $filename $filename.bak [cite: 10]
 end
 
-# --- Función 'copy' mejorada para copiar directorios de forma recursiva ---
+# --- Enhanced 'copy' function to copy directories recursively ---
 function copy
     set count (count $argv | tr -d \n)
     if test "$count" = 2; and test -d "$argv[1]"

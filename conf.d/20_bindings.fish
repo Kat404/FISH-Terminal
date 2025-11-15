@@ -1,11 +1,11 @@
 # -----------------------------------------------------------------------------
-#                ---> ATAJOS DE TECLADO (KEY BINDINGS) <---
+#                ---> KEY BINDINGS <---
 #
-# Asigna funciones a combinaciones de teclas.
+# Assign functions to key combinations.
 # -----------------------------------------------------------------------------
 
-# Asigna las funciones de 'bang-bang' a las teclas '!' y '$'
-# Se ajusta automáticamente si usas el modo Vi o Emacs.
+# Bind the 'bang-bang' functions to the '!' and '$' keys
+# Automatically adjusts if you use Vi or Emacs mode.
 if [ "$fish_key_bindings" = fish_vi_key_bindings ]
     bind -Minsert ! __history_previous_command
     bind -Minsert '$' __history_previous_command_arguments
