@@ -67,36 +67,3 @@ alias glo5='git log --oneline -5'  # <-- View last 5 commits in one line
 alias gco='git checkout'           # <-- Switch branch or revision
 alias gbr='git branch'             # <-- List, create, or delete branches
 alias gp='git push'                # <-- Push changes to remote repository
-
-# ---> Rust aliases <---
-
-# --- Creation and Checking ---
-alias cn='cargo new'        # <-- Create a new project (binary)
-alias ci='cargo init'       # <-- Create a Cargo.toml from an existing src/
-alias cnl='cargo new --lib' # <-- Create a new project (library)
-alias cc='cargo check'      # <-- Compile code without producing an executable (very fast)
-
-# --- Build ---
-alias cb='cargo build'            # <-- Build the project (debug mode, slower than 'check')
-alias cbr='cargo build --release' # <-- Build the project (release mode, optimized)
-
-# --- Run ---
-alias cr='cargo run'            # <-- Compile and run (debug mode)
-alias crr='cargo run --release' # <-- Compile and run (release mode)
-
-# --- Test ---
-alias ct='cargo test'            # <-- Run tests (debug mode)
-alias ctr='cargo test --release' # <-- Run tests (release mode)
-
-# --- Quality and Formatting ---
-alias cf='cargo fmt'                # <-- Format code
-alias ccl='cargo clippy'            # <-- Run linter (code analysis)
-alias cclr='cargo clippy --release' # <-- Run linter (release mode)
-
-# --- Utilities ---
-alias cu='cargo update'       # <-- Update dependencies (Cargo.lock)
-alias cdo='cargo doc'         # <-- Generate documentation
-alias cdoo='cargo doc --open' # <-- Generate and open documentation
-
-# --- Ecosystem (Rustup) ---
-alias ru='rustup update' # <-- Update Rust toolchain

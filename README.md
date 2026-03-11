@@ -88,7 +88,7 @@ Contributions are welcome! Feel free to fork and open a pull request.
 
 ## 📝 License <a id="license"></a> <small><a href="#tabla-de-contenidos" title="Back to index">⬆</a></small>
 
-This project is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for more details.
+This project is licensed under the Unlicense. See the [`LICENSE`](LICENSE) file for more details.
 
 ---
 

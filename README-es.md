@@ -87,7 +87,7 @@ Puedes personalizar tu configuración editando los archivos en `~/.config/fish/`
 
 ## 📝 Licencia <a id="licencia"></a> <small><a href="#tabla-de-contenidos" title="Volver al índice">⬆</a></small>
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo [`LICENSE`](LICENSE) para más detalles.
+Este proyecto está bajo la Unlicense. Ver el archivo [`LICENSE`](LICENSE) para más detalles.
 
 ---
 
